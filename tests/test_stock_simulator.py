@@ -1,6 +1,6 @@
 import unittest
 
-from stock_simulator import (
+from simulator_engine import (
     ContestSimulator,
     EmailMessage,
     EmailOrderParser,

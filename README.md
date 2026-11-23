@@ -21,16 +21,16 @@ The simulator core is intentionally independent of Gmail, OpenAI, or any specifi
 
 ```text
 .
-├── stock_simulator.py              # Main simulator engine
+├── simulator_engine.py              # Main simulator engine
 ├── demo.py                         # Runnable example flow
-├── Stock_Simulator_Rebuilt.ipynb   # Notebook wrapper/demo
+├── contest_demo.ipynb   # Notebook wrapper/demo
 ├── tests/
-│   └── test_stock_simulator.py     # Unit tests
+│   └── test_simulator_engine.py     # Unit tests
 ├── README.md
 └── .gitignore
 ```
 
-The most important file is `stock_simulator.py`. It contains the pricing engine, order parser, portfolio manager, trade execution logic, and leaderboard generation.
+The most important file is `simulator_engine.py`. It contains the pricing engine, order parser, portfolio manager, trade execution logic, and leaderboard generation.
 
 ## Quick Start
 
@@ -161,9 +161,9 @@ UserConfig(user_id="team_5", password="pass005", starting_cash=100_000)
 
 ## Notebook Usage
 
-`Stock_Simulator_Rebuilt.ipynb` is a notebook-friendly wrapper around the same engine. Use it if you want to demonstrate the simulator interactively, inspect intermediate outputs, or adapt the contest setup in cells.
+`contest_demo.ipynb` is a notebook-friendly wrapper around the same engine. Use it if you want to demonstrate the simulator interactively, inspect intermediate outputs, or adapt the contest setup in cells.
 
-The notebook imports from `stock_simulator.py`, so improvements to the engine automatically carry over to the notebook.
+The notebook imports from `simulator_engine.py`, so improvements to the engine automatically carry over to the notebook.
 
 ## Current Limitations
 
