@@ -369,3 +369,7 @@ Those can be added later as adapters around the existing simulator core.
 Do not hard-code Gmail passwords or OpenAI API keys in notebooks or source code. Pass credentials through environment variables or a separate secrets manager.
 
 This repository is intended for mock trading contests only. Do not use it for real-money trading.
+
+## License
+
+This project is licensed under the MIT License. See `LICENSE` for details.
